@@ -1,0 +1,15 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.text-part{
+    width: 70%;
+    height: 100%;
+}
+.about-area, .contact-area{
+    background: #262626;
+    color: #fff;
+}
+html{
+    scroll-behavior: smooth;
+}

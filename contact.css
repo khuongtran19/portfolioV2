@@ -1,0 +1,138 @@
+.contact-area{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+    height: 100vh;
+    padding-top: 70px;
+}
+section{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+section .text-part{
+    height: 100px;
+}
+section .wave{
+    position: absolute;
+    width: 100%;
+    height: 143px;
+    bottom: 0;
+    left:0 ;
+    background: url(wave.png);
+    animation: animate 10s  linear infinite;
+}
+section .wave::before{
+    content: '';
+    width: 100%;
+    height: 143px;
+    background: url(wave.png);
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.4;
+    animation: animate-reverse 10s linear infinite;
+}
+section .wave::after{
+    content: '';
+    width: 100%;
+    height: 143px;
+    background: url(wave.png);
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.4;
+    animation-delay: -5s;
+    animation: animate 20s linear infinite;
+}
+@keyframes animate{
+    0%{
+        background-position: 0;
+    }
+    100%{
+        background-position: 1360px;
+    }
+}
+@keyframes animate-reverse{
+    0%{
+        background-position: 1360px;
+    }
+    100%{
+        background-position: 0px;
+    }
+}
+.contact-logo{
+    text-align: center;
+}
+.contact-icon{
+    margin: 100px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.icon{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+.icon li{
+    position: relative;
+    list-style: none;
+    width: 60px;
+    height: 60px;
+    margin: 0 60px;
+    transform: rotate(-30deg) skew(25deg);
+    background: #ccc;
+}
+.icon li span{
+    position: absolute;
+    top: 0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    transition: .5s;
+    background: #3498db;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 30px !important;
+}
+.icon li:hover span:nth-child(5){
+    transform: translate(40px, -40px);
+    opacity: 1;
+}
+.icon li:hover span:nth-child(4){
+    transform: translate(30px, -30px);
+    opacity: .8;
+}
+.icon li:hover span:nth-child(3){
+    transform: translate(20px, -20px);
+    opacity: .6;
+}
+.icon li:hover span:nth-child(2){
+    transform: translate(10px, -10px);
+    opacity: .4;
+}
+.icon li:hover span:nth-child(1){
+    transform: translate(0px, 0px);
+    opacity: .2;
+}
+.icon li:nth-child(1) span{
+    background: #c0392b;
+}
+.icon li:nth-child(2) span{
+    background: #2ecc71;
+}
+.icon li:nth-child(3) span{
+    background: #3498db;
+}
+.icon li:nth-child(4) span{
+    background: #2c3e50;
+}
