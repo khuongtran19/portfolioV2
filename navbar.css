@@ -38,9 +38,14 @@ a {
     display: none;
   }
   .menu {
-    margin: auto;
+    margin: 1%;
+    padding: 1%;
   }
   .header {
     height: 70px;
+    justify-content: center;
+  }
+  a {
+    margin: 5px;
   }
 }

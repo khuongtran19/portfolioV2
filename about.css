@@ -29,7 +29,7 @@ p {
 }
 .about-info {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   grid-gap: 30px;
 }
 .about a {
@@ -139,6 +139,19 @@ p {
   }
   .about-area p {
     font-size: 25px;
+    line-height: 1.3;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .about-area h1 {
+    font-size: 40px;
+    line-height: 1;
+  }
+  .border {
+    margin: 2px auto;
+  }
+  .about-area p {
+    font-size: 20px;
     line-height: 1.3;
   }
 }
