@@ -127,6 +127,9 @@ input:checked ~ .detail {
   margin: 0 10px 0 10px;
   color: #fff;
 }
+.phone-size {
+  display: none;
+}
 @media only screen and (max-width: 1300px) {
   .slidershow {
     width: 900px;
@@ -170,20 +173,16 @@ input:checked ~ .detail {
   }
 }
 @media only screen and (max-width: 500px) {
-  .slidershow {
-    width: 300px;
-    height: 150px;
-    overflow: hidden;
+  .phone-size {
+    display: block;
   }
-  .detail h2 {
-    font-size: 15px;
+  .laptop-ipad-size {
+    display: none;
   }
-  .detail p {
-    font-size: 14px;
-    line-height: 1;
+  .work-image {
+    width: 100%;
   }
-  .bar {
-    width: 20px;
-    height: 5px;
+  .my-work-area {
+    height: 1500px;
   }
 }
