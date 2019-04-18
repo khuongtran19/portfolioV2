@@ -82,6 +82,14 @@ p {
   width: 60%;
   animation: sql 2s;
 }
+.p6 {
+  width: 50%;
+  animation: net 2s;
+}
+.p7 {
+  width: 50%;
+  animation: c 2s;
+}
 @keyframes react {
   0% {
     width: 0%;
@@ -120,6 +128,22 @@ p {
   }
   100% {
     width: 75%;
+  }
+}
+@keyframes net {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 50%;
+  }
+}
+@keyframes c {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 50%;
   }
 }
 .progress-bar span {
