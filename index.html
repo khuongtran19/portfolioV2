@@ -48,10 +48,7 @@
         <div class="about-info">
           <div class="about">
             <p>
-              My name is Khuong Tran. A full-stack developer. I have 1 year web
-              developer experience with ReactJS, NodeJS and Microsoft SQL. As
-              Junior Developer, I'm eager to learn new technology and improve my
-              skills
+              I am geek. I love technology. I want to be a part of technology revolution. I am eager to learn. I enjoy solving problem and create new challenge for myself.
             </p>
             <a href="Resume Khuong Tran.docx" download>
               <i class="fa fa-download"></i> Download Resume</a
@@ -119,17 +116,57 @@
       </div>
     </div>
     <div class="my-work-area" id="my-work">
-      <div class="text-part">
-        <div class="laptop-ipad-size">
-          <div class="slidershow my-work-middle">
-            <div class="slides">
-              <input type="radio" name="r" id="r1" checked />
-              <input type="radio" name="r" id="r2" />
-              <input type="radio" name="r" id="r3" />
-              <input type="radio" name="r" id="r4" />
-              <input type="radio" name="r" id="r5" />
-              <div class="slide s1">
-                <input type="checkbox" name="" />
+      <div class="text-part-my-work">
+          <div class="my-work-box"> 
+            <div class="card"> 
+              <div class="layer">
+                  <button id="modalBtn" class="button">Sample Work</button>
+              </div> 
+              <div class="image">
+                  <img class="company-logo" src="Grolo.png"/>
+              </div>
+              <div class="details">
+                <h3>Grolo</h3>
+                <h5>Full Stack Developer</h5>
+                <h5>Front-end: React.js, Bootstrap</h5>
+                <h5>Mid-tier: ASP.Net, C#</h5>
+                <h5>Back-end: MS SQL</h5>
+              </div>
+              <div class="content">
+                <p>Grolo is a multi-tenant software-as-a-service white label platform for marketing agencies. Agencies subscribe to Grolo and use it to provide a branded application for small and medium local businesses to implement social media marketing campaigns and customer loyalty programs. The agency, in turn, may configure subscription levels for their business clients from freemium minimal support to more full-service support where agency representatives actively manage campaigns and loyalty programs.</p>
+              </div> 
+            </div> 
+            <div class="card"> 
+                <div class="layer">
+                  <button id="modalBtn" class="button">Sample Work</button>
+                </div> 
+                <div class="image">
+                    <img class="company-logo" src="gns.png"/>
+                  </div>
+                <div class="details">
+                  <h3>Genius Net Solutions</h3>
+                  <h5>Front End Developer</h5>
+                  <h5>Front-end: React.js, HTML5, CSS3, Bootstrap</h5>
+                </div>
+                <div class="content">
+                  <p>Genius Net Solution is company from Turkey with focus on machine learning and hardware. Since 2000, they success in provide innovative technological solutions for their clients. Now they want to bring those solutions to US as their new market.
+                  </p>
+                </div> 
+              </div> 
+          </div>
+          <div id="showModal" class="modal">
+            <div class="modal-content">
+              <span class="closeBtn">&times;</span>
+              <div class="laptop-ipad-size">
+                <div class="slidershow my-work-middle">
+                  <div class="slides">
+                    <input type="radio" name="r" id="r1" checked />
+                    <input type="radio" name="r" id="r2" />
+                    <input type="radio" name="r" id="r3" />
+                    <input type="radio" name="r" id="r4" />
+                    <input type="radio" name="r" id="r5" />
+                    <div class="slide s1">
+                    <input type="checkbox" name="" />
                 <div class="toggle">+</div>
                 <div class="imgBx">
                   <img src="gif0.gif" alt=" " />
@@ -165,15 +202,7 @@
                 <div class="detail">
                   <h2>Grolo (Beta)</h2>
                   <p>
-                  Grolo is a multi-tenant software-as-a-service white label
-                  platform for marketing agencies. Agencies subscribe to Grolo
-                  and use it to provide a branded application for small and
-                  medium local businesses to implement social media marketing
-                  campaigns and customer loyalty programs. The agency, in turn,
-                  may configure subscription levels for their business clients
-                  from freemium minimal support to more full-service support
-                  where agency representatives actively manage campaigns and
-                  loyalty programs. Personally designed and implemented the
+                  Personally designed and implemented the
                   subsystem which allow businesses to create social media posts,
                   including database design and stored procedures, implementing
                   mid-tier Web API endpoints and services in C#, and the user
@@ -197,26 +226,29 @@
         </div>
         <div class="phone-size">
           <div class="imgBx">
-            <p>Grolo Post Entity: show users all posts they made.</p>
+            <p class="mobile-content">Grolo Post Entity: show users all posts they made.</p>
             <img src="gif0.gif" alt=" " class="work-image"/>
           </div>
           <div class="imgBx">
-            <p>Grolo Post Tag: show all Posts associated with tag.</p>
+            <p class="mobile-content">Grolo Post Tag: show all Posts associated with tag.</p>
             <img src="gif1.gif" alt=" " class="work-image"/>
           </div>
           <div class="imgBx">
-            <p>Grolo Flyer: auto create flyer for business owner base on their bussiness information</p>
+            <p class="mobile-content">Grolo Flyer: auto create flyer for business owner base on their bussiness information</p>
             <img src="gif2.gif" alt=" " class="work-image"/>
           </div>
           <div class="imgBx">
-            <p>Grolo Campaigns: show all post associated with campaigns</p>
+            <p class="mobile-content">Grolo Campaigns: show all post associated with campaigns</p>
             <img src="gif3.gif" alt=" " class="work-image"/>
           </div>
           <div class="imgBx">
-            <p>Grolo Post Input: input all information users want and pick what social media users want to post</p>
+            <p class="mobile-content">Grolo Post Input: input all information users want and pick what social media users want to post</p>
             <img src="gif4.gif" alt=" " class="work-image"/>
          </div>
         </div>
+            </div>
+          </div>
+        
       </div>
     </div>
     <div class="contact-area" id="contact">
@@ -264,8 +296,9 @@
             </ul>
           </div>
         </div>
-        <div class="wave "></div>
+        <div class="wave"></div>
       </section>
     </div>
+    <script src="main.js"></script>
   </body>
 </html>

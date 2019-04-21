@@ -6,8 +6,76 @@
   flex-wrap: wrap;
   flex-direction: row;
   width: 100%;
-  height: 100vh;
-  padding-top: 70px;
+  padding-top: 40px;
+}
+.text-part-my-work {
+  width: 80%;
+}
+.my-work-box .card .details .image {
+  line-height: 0.2;
+  z-index: 2;
+}
+.my-work-box .card .image {
+  width: 70px;
+  height: 70px;
+  margin: 0 auto;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 4px solid white;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.my-work-box .card .content p {
+  font-size: 20px;
+  line-height: 1.2;
+}
+.my-work-box .card h3 {
+  font-size: 30px;
+}
+.my-work-box .card h4 {
+  font-size: 26px;
+}
+.my-work-box .card h5 {
+  color: whitesmoke;
+}
+.my-work-box .card .image .company-logo {
+  width: 70px;
+  height: 70px;
+}
+.my-work-box {
+  margin: 100px auto 100px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 20px;
+  color: white;
+}
+.my-work-box .card {
+  position: relative;
+  width: 370px;
+  margin: 0 auto;
+  background: #333;
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+}
+.my-work-box .card .layer {
+  position: absolute;
+  top: calc(100% - 2px);
+  height: 100%;
+  width: 100%;
+  left: 0;
+  background: linear-gradient(#1abc9c, #2980b9);
+  z-index: 1;
+  transition: 0.5s;
+}
+.my-work-box .card:hover .layer {
+  top: 0;
+}
+.my-work-box .card .content {
+  z-index: 2;
+  position: relative;
 }
 .slidershow {
   width: 1250px;
@@ -27,6 +95,40 @@
   transform: translateX(-50%);
   display: flex;
   z-index: 2;
+}
+.button {
+  background-color: #e74c3c;
+  color: white;
+  width: 100px;
+  height: 30px;
+  border-radius: 25px;
+}
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 5;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  background-color: black;
+}
+.modal-content {
+  color: black;
+  margin-top: 20px;
+  margin-right: 20px;
+}
+.closeBtn {
+  color: #ccc;
+  float: right;
+  font-size: 30px;
+}
+.closeBtn:hover,
+.closeBtn:focus {
+  color: red;
+  text-decoration: none;
+  cursor: pointer;
 }
 .bar {
   width: 50px;
@@ -184,5 +286,23 @@ input:checked ~ .detail {
   }
   .my-work-area {
     height: 1500px;
+  }
+  .mobile-content {
+    color: white;
+    padding: 10px;
+  }
+  .my-work-box .card {
+    width: 300px;
+  }
+  .my-work-box .card .details {
+    line-height: 1;
+  }
+  .text-part-my-work {
+    margin: 0;
+    padding: 0;
+  }
+  .my-work-area {
+    margin: 0;
+    padding: 0;
   }
 }
